@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Dosis:500|Rubik+One' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Fetches JSON data
+			$.getJSON( "dracula_json.js", function( data ) {
+				// With Jquery($) loops through items in data
+  				$.each(data, function(index, item) {
+  					$('.col-1 ul').append("<li>"+ item.sentence +"</li>");
+  				});
+			});
+
+			// With Jquery($) select list items in ".col-1 ul"
+			// Fades items into ".col-2 ul"
+			$(document).on( "click", '.col-1 ul li', function() {
+                var item = $(this).html();
+                $('.col-2 ul').append("<li>"+ item +"</li>");
+                $('.col-2 ul li:last-child').hide().fadeIn();
+            });
+		});
+	</script>
+</head>
+<body>
+
+<title>DRACULA</title>
+
+<div class="header"><h1>DRACULA</h1></div>
+
+<div class="col-1">
+	<ul>
+	
+	</ul>
+</div>
+
+<div class="col-2">
+	<ul>
+	</ul>
+
+</div>
+
+<div class="footer">
+made by <a href="http://allegramdenton.com">allegra denton</a> // text by bram stoker
+</div>
+
+</body>
+</html>

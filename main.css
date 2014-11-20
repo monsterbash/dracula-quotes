@@ -1,0 +1,67 @@
+/*----------Main Stlyes--------------*/
+body {
+    background-color: #ffffff;
+}
+
+.header {
+	transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	transform-origin: left top 0;
+		-webkit-transform-origin: left top 0;
+	width: 46%;
+	height: 4em;
+	position: fixed;
+	top: 0px;
+	left: 77px;
+	margin: 3em 0 0 1em;
+}
+
+h1 {
+	font-family: 'Rubik One', sans-serif;
+	font-size: 1.5em;
+	color: #000;
+	letter-spacing: 25px;
+	line-height: 70px;
+	text-transform: uppercase;
+}
+
+ul li {
+	list-style-type: none;
+	display: block;
+    padding: .6em .6em .6em 1em;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.2em;
+	margin: 1.5em 0 1.5em 0;
+	background-color: #fff200;
+    color: #000;
+}
+
+.col-1, 
+.col-2 {
+	width: 40%;
+	float: left;
+}
+
+.col-1 {
+	margin-left: 4em;
+}
+
+.footer {
+	height: 4em;
+	width: 100%;
+	position: fixed;
+	bottom: -20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #000;
+	color: #fff;
+	line-height: 2.5em;
+	letter-spacing: 3px;
+	font-family: 'Dosis', sans-serif;
+	font-size: .7em;
+	text-align: center;
+}
+
+.footer a {
+	color: #ed008c;
+}
