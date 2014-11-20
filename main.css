@@ -1,6 +1,6 @@
 /*----------Main Stlyes--------------*/
 body {
-    background-color: #ffffff;
+   	background-color: #ffffff;
 }
 
 .header {
@@ -28,12 +28,12 @@ h1 {
 ul li {
 	list-style-type: none;
 	display: block;
-    padding: .6em .6em .6em 1em;
+	padding: .6em .6em .6em 1em;
 	font-family: 'Dosis', sans-serif;
 	font-size: 1.2em;
 	margin: 1.5em 0 1.5em 0;
 	background-color: #fff200;
-    color: #000;
+    	color: #000;
 }
 
 .col-1, 
